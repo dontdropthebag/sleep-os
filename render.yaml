@@ -9,3 +9,5 @@ services:
     envVars:
       - key: DATABASE_URL
         sync: false
+      - key: SIOS_CORS_ORIGINS
+        value: https://sleep-os-lac.vercel.app
