@@ -32,7 +32,7 @@ serverless. Example (Render):
 1. Create a **PostgreSQL** instance; copy its connection URL.
 2. New **Web Service** → Root Directory `backend`.
    - Build command: `pip install -r requirements.txt`
-   - Start command: `uvicorn app.main:app --host 0.0.0.0 --port $PORT`
+   - Start command: `python -m uvicorn app.main:app --host 0.0.0.0 --port $PORT`
      (a `Procfile` with `release: alembic upgrade head` is included).
 3. Environment variables (see table in README).
 4. Run migrations once: `alembic upgrade head` (the `release` phase does this
